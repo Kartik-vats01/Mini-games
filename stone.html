@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stone Paper Scissor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/paper.css">
+</head>
+<body>
+
+<div class="Game">
+    <div class="container text-center mt-5">
+
+        <h1><u>Stone Paper Scissor Game</u></h1>
+
+        <div id="matchSelect" class="mt-4">
+            <button class="btn  m-2" onclick="startMatch(3)">Best of 3</button>
+            <button class="btn  m-2" onclick="startMatch(5)">Best of 5</button>
+        </div>
+
+        <div id="gameArea" style="display:none;">
+            <div class="gameblock mt-4">
+                <button class="bt1 btn  m-2">Stone</button>
+                <button class="bt1 btn m-2">Paper</button>
+                <button class="bt1 btn m-2">Scissor</button>
+            </div>
+
+            <h2 id="result" class="mt-3"></h2>
+
+            <div class="score mt-4">
+                <h3>User : <span id="userScore">0</span></h3>
+                <h3>Computer : <span id="compScore">0</span></h3>
+            </div>
+
+            <button id="resetBtn" class="btn btn-warning mt-3">Reset Score</button>
+        </div>
+
+        <div id="winnerScreen" style="display:none;">
+            <h1 id="winnerText"></h1>
+            <button class="btn btn-success mt-3" onclick="newMatch()">New Match</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/scissor.js"></script>
+</body>
+</html>

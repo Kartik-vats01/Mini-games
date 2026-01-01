@@ -1,0 +1,64 @@
+body{
+    padding: 0px;
+    background-color: white;
+}
+
+.Game{
+    text-align: center;
+    color: rgb(117, 154, 218);
+    width: 100%;
+}
+
+.Game h1{
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    padding-top: 50px;
+    font-size: 60px;
+    font-style:italic;
+}
+
+.gameblock{
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.bt1{
+    color: white;
+    padding: 20px;
+    background-color: rgb(153, 167, 255);
+    border: none;
+    margin: 25px;
+    border-radius: 25px 0px 25px 0px;
+    font-size: 20px;
+    font-weight: 800;
+}
+#userScore ,#compScore{
+  font-size: 52px;
+  font-weight: bold;
+}
+.score h3{
+    font-size: 52px;
+    font-weight: bold;
+    font-family:   'Lucida Grande', 'Lucida Sans Unicode';
+}
+.score {
+    margin-bottom: 40px;
+    background-color: aliceblue;
+}
+#resetBtn{
+    padding: 10px;
+    font-size: 12px;
+}
+#result{
+    font-size: 40px;
+    color: white;
+    background-color:rgb(153, 167, 255) ;
+
+}
+.btn{
+    padding: 30px;
+    margin-top: 30px;
+    background-color: rgb(153, 167, 255);
+    color: white;
+}
