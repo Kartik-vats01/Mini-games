@@ -3,32 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page </title>
+    <title>MiniGames - Play Epic Gaming Challenges</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="Home">
+    <!-- Navigation Header -->
+    <header class="navbar">
         <div class="container">
-            <div class="header">
-               <h1>Mini Games</h1>
-                <div class="left-section">
+            <div class="logo">
+                <h1>🎮 MiniGames</h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#games" class="nav-link">Games</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search games..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to MiniGames Arena</h2>
+            <p>Challenge yourself with exciting mini games and compete with players worldwide</p>
+            <a href="#games" class="btn btn-primary">Start Playing</a>
+        </div>
+        <div class="hero-background">
+            🎯 ⚡ 🎮 ⭐ 🔥
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games" id="games">
+        <div class="container">
+            <h2 class="section-title">Available Games</h2>
+            <div class="games-grid">
+                <!-- Stone Paper Scissor Game Card -->
+                <div class="game-card">
+                    <div class="game-icon">✊✋✌️</div>
+                    <h3>Stone Paper Scissor</h3>
+                    <p>The classic game of strategy and luck. Play against the computer and test your prediction skills!</p>
+                    <div class="game-stats">
+                        <span class="difficulty">Easy</span>
+                        <span class="players">1 Player</span>
+                    </div>
+                    <a href="stone.html" class="btn btn-play">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About MiniGames</h4>
+                    <p>Your ultimate destination for quick, fun gaming experiences. Challenge your skills with our collection of mini games.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </div>
-                <div class="right-section">
-                    <ul>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="signup.html">Signup</a></li>
-                    </ul>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Discord</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@minigames.com</p>
+                    <p>Support: support@minigames.com</p>
+                </div>
             </div>
-            <div class="Hero-section">
-    <h1>Welcome to the Home Page</h1>
-    <p>This is the home page of our website. Here you can find various mini games i have created. Feel free to explore and have fun!</p>
-    </div>
-</div>  
-     </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MiniGames. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
