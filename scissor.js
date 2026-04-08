@@ -7,6 +7,8 @@ const buttons = document.querySelectorAll(".bt1");
 const resultDisplay = document.getElementById("result");
 const userScoreEl = document.getElementById("userScore");
 const compScoreEl = document.getElementById("compScore");
+const topUserTotalEl = document.getElementById("topUserTotal");
+const topCompCountEl = document.getElementById("topCompCount");
 const resetBtn = document.getElementById("resetBtn");
 const targetScoreEl = document.getElementById("targetScore");
 const roundInfoEl = document.getElementById("roundInfo");
@@ -32,12 +34,14 @@ buttons.forEach(btn => {
         else if (isUserWinner(user, computer)) {
             user_score++;
             userScoreEl.innerText = user_score;
+            topUserTotalEl.innerText = user_score;
             resultDisplay.innerText = "You Won this Round";
             resultDisplay.style.backgroundColor = "#28a745";
         }
         else {
             comp_score++;
             compScoreEl.innerText = comp_score;
+            topCompCountEl.innerText = comp_score;
             resultDisplay.innerText = "Computer Won this Round";
             resultDisplay.style.backgroundColor = "#dc3545";
         }
@@ -70,6 +74,8 @@ function startMatch(rounds) {
     roundsPlayed = 0;
     userScoreEl.innerText = 0;
     compScoreEl.innerText = 0;
+    topUserTotalEl.innerText = 0;
+    topCompCountEl.innerText = 0;
     userChoiceEl.innerText = "-";
     computerChoiceEl.innerText = "-";
     resultDisplay.innerText = "Pick your move to start.";
@@ -100,6 +106,8 @@ function newMatch() {
     winnerScreen.style.display = "none";
     gameArea.style.display = "none";
     matchSelect.style.display = "block";
+    topUserTotalEl.innerText = 0;
+    topCompCountEl.innerText = 0;
 }
 
 resetBtn.addEventListener("click", () => {
@@ -108,6 +116,8 @@ resetBtn.addEventListener("click", () => {
     roundsPlayed = 0;
     userScoreEl.innerText = 0;
     compScoreEl.innerText = 0;
+    topUserTotalEl.innerText = 0;
+    topCompCountEl.innerText = 0;
     roundInfoEl.innerText = 0;
     userChoiceEl.innerText = "-";
     computerChoiceEl.innerText = "-";

@@ -25,6 +25,40 @@ body{
     margin-bottom: 1.75rem;
 }
 
+.top-bar{
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.summary-row{
+    gap: 1rem;
+}
+
+.summary-card{
+    padding: 14px 20px;
+    border-radius: 18px;
+    background: rgba(117, 149, 255, 0.12);
+    min-width: 140px;
+}
+
+.summary-label{
+    display: block;
+    color: #5a6b97;
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+}
+
+.summary-card strong{
+    font-size: 1.7rem;
+    color: #24325f;
+}
+
+.home-btn{
+    border-radius: 22px;
+    padding: 0.8rem 1.2rem;
+    font-weight: 700;
+}
+
 .choice-panel,
 .match-status,
 .gameblock,
