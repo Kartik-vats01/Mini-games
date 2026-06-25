@@ -5,7 +5,7 @@ list of mini games project are -
 1. Stone-Paper-Scissor
 2. Tic-Tac-Toe
 3. Flappy bird
-4. .....
+4. Many more..
 ```
 Working....
 ```
